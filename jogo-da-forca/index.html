@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca - Dev Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo da Forca</h1>
+        
+        <div class="forca-container">
+            <div id="forca-desenho">
+                <div class="base"></div>
+                <div class="poste"></div>
+                <div class="barra"></div>
+                <div class="corda"></div>
+                <div id="cabeca" class="corpo-parte"></div>
+                <div id="tronco" class="corpo-parte"></div>
+                <div id="braco-esquerdo" class="corpo-parte"></div>
+                <div id="braco-direito" class="corpo-parte"></div>
+                <div id="perna-esquerda" class="corpo-parte"></div>
+                <div id="perna-direita" class="corpo-parte"></div>
+            </div>
+        </div>
+
+        <div id="palavra-secreta" class="palavra-display"></div>
+        
+        <div class="input-section">
+            <input type="text" id="letra-input" maxlength="1" placeholder="?">
+            <button onclick="verificarLetra()" id="btn-chutar">Chutar</button>
+        </div>
+
+        <div class="info-section">
+            <p>Letras Erradas: <span id="letras-erradas"></span></p>
+            <p>Tentativas Restantes: <span id="tentativas">6</span></p>
+            <p id="mensagem"></p>
+        </div>
+
+        <button onclick="novoJogo()" class="btn-reset">Novo Jogo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

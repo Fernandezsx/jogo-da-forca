@@ -1,0 +1,73 @@
+body {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 400px;
+}
+
+.palavra-display {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    color: #4ecca3;
+    min-height: 60px;
+}
+
+/* Estilo da Forca */
+#forca-desenho {
+    position: relative;
+    height: 150px;
+    width: 100px;
+    margin: 0 auto 20px;
+    border-bottom: 4px solid #fff;
+}
+
+.poste { position: absolute; height: 150px; width: 4px; background: #fff; left: 20px; }
+.barra { position: absolute; width: 60px; height: 4px; background: #fff; left: 20px; }
+.corda { position: absolute; width: 2px; height: 20px; background: #fff; left: 80px; }
+
+/* Partes do corpo - Escondidas por padrão */
+.corpo-parte { 
+    position: absolute; 
+    background: #e94560; 
+    display: none; 
+}
+
+#cabeca { width: 20px; height: 20px; border-radius: 50%; left: 70px; top: 20px; }
+#tronco { width: 4px; height: 40px; left: 78px; top: 40px; }
+#braco-esquerdo { width: 20px; height: 4px; left: 58px; top: 50px; transform: rotate(-30deg); }
+#braco-direito { width: 20px; height: 4px; left: 82px; top: 50px; transform: rotate(30deg); }
+#perna-esquerda { width: 20px; height: 4px; left: 63px; top: 85px; transform: rotate(-45deg); }
+#perna-direita { width: 20px; height: 4px; left: 78px; top: 85px; transform: rotate(45deg); }
+
+.input-section input {
+    width: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-reset {
+    margin-top: 20px;
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
